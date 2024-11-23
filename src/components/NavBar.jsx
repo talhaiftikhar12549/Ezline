@@ -5,6 +5,7 @@ import emailimage from "../assets/email.svg"
 import linkedinpicture from "../assets/linkedin.svg"
 import facebookpicture from "../assets/facebook.svg"
 import youtubepicture from "../assets/youtube.svg"
+import X from "../assets/x.svg"
 export default function NavBar() {
   return (
     <div className="border-[#00bcd4] border-t-[5px] ">
@@ -18,13 +19,13 @@ export default function NavBar() {
 
       <img src={emailimage}  width="20px" height="20px"/>
       <p className="p-2">info@eziline.com</p>
-      <p className="border-[#73848f] border-x-[1px]"></p>
+      <p className="border-[#73848f] border-l-[1px]"></p>
       <img className="mx-2" src={facebookpicture}  width="20px" height="20px"/>
       <img className="mx-2" src={linkedinpicture}  width="20px" height="20px"/>
-      <img className="mx-2" src={emailimage}  width="20px" height="20px"/>
+      <img className="mx-2" src={X}  width="20px" height="20px"/>
       <img className="mx-2" src={youtubepicture}  width="20px" height="20px"/>
 
-     <p className="border-[#73848f] border-x-[1px]"> </p>
+     <p className="border-[#73848f] border-r-[1px]"> </p>
 
      </div>
     </div>

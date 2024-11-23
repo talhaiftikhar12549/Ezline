@@ -3,19 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar'
+import AnimationSection from './components/AnimationSection'
 
 function App() {
 
 
   return (
     <>
+    <div className='h-[100vh]'>
     <NavBar/>
-      <p>
-        meow meow
-      </p>
-      <h1 className="text-3xl font-bold underline ">
-      Hello world!
-    </h1>
+    <AnimationSection/>
+    </div>
     </>
   )
 }
