@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar'
 import AnimationSection from './components/AnimationSection'
+import AboutUsSection from './components/AboutUsSection'
+import OurProjectManagement from './components/OurProjectManagementSection'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     <div className='h-[100vh]'>
     <NavBar/>
     <AnimationSection/>
+    <AboutUsSection/>
+    <OurProjectManagement/>
     </div>
     </>
   )

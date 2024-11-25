@@ -5,7 +5,7 @@ import bluesearch from "../assets/blue search.svg";
 
 export default function () {
   const [currentImage, setCurrentImage] = useState(searchpic);  // Add state here
-
+  const [buttonBackgorund, setButtonBackground] = useState(texture);
   return (
     <>
       <div className="flex text-[#dbdbdb] cursor-pointer font-bold justify-center w-[100%] pt-4 ">
@@ -27,10 +27,12 @@ export default function () {
           <button
             className="border-[#ca981c] border-2 my-4 px-4 rounded-lg text-white text-lg"
             style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${texture})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${buttonBackgorund})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            onMouseEnter={() => setButtonBackground("")} 
+            onMouseLeave={() => setButtonBackground(texture)} 
           >
             16TH Anniversary
           </button>
