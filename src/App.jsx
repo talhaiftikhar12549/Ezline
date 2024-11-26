@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import AnimationSection from './components/AnimationSection'
 import AboutUsSection from './components/AboutUsSection'
 import OurProjectManagement from './components/OurProjectManagementSection'
+import IphoneSection from './components/IphoneSection'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <AnimationSection/>
     <AboutUsSection/>
     <OurProjectManagement/>
+    <IphoneSection/>
     </div>
     </>
   )
