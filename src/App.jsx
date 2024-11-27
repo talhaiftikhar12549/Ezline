@@ -7,6 +7,7 @@ import AnimationSection from './components/AnimationSection'
 import AboutUsSection from './components/AboutUsSection'
 import OurProjectManagement from './components/OurProjectManagementSection'
 import IphoneSection from './components/IphoneSection'
+import SoftwareDevlifeCycle from './components/SoftwareDevLifeCycle'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <AboutUsSection/>
     <OurProjectManagement/>
     <IphoneSection/>
+    <SoftwareDevlifeCycle/>
     </div>
     </>
   )
