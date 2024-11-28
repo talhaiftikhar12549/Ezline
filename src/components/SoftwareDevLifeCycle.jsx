@@ -8,7 +8,9 @@ export default function SoftwareDevLifeCycle() {
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
     <div className="w-[100%]">
-        <div className="w-[50%]"></div>
+        <div className="w-[50%]">
+          <h2 className="text-4xl font-bold text-[#ffffff]">SOFTWARE DEV LIFE CYCLE</h2>
+        </div>
     </div>
     </div>
   );
