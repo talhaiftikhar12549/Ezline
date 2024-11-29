@@ -18,18 +18,18 @@ export default function SoftwareDevLifeCycle() {
         </div>
 
 
-        <div className="w-[50%] flex justify-center py-16 border">
+        <div className="w-[50%] h-[100%] flex justify-center py-40 ">
         <div className="relative w-full h-[50%] flex justify-center items-center ">
-      <div className="absolute -rotate-45 bg-red-600 text-white font-bold text-lg px-6 py-3 rounded shadow-lg">
+      <div className="absolute -rotate-45 bg-[#732620] text-white font-bold text-lg px-8 py-3 rounded shadow-lg">
         SDLC
       </div>
-      <div className="absolute top-20 left-30 text-gray-800 font-semibold text-lg">PLANNING</div>
-      <div className="absolute top-10 right-20 text-gray-800 font-semibold text-lg">DESIGNING</div>
-      <div className="absolute top-1/3 right-0 text-gray-800 font-semibold text-lg">DEFINING</div>
-      <div className="absolute bottom-1/3 right-20 text-gray-800 font-semibold text-lg">BUILDING</div>
-      <div className="absolute bottom-10 right-1/4 text-gray-800 font-semibold text-lg">PLANNING</div>
-      <div className="absolute bottom-10 left-1/4 text-gray-800 font-semibold text-lg">DEPLOYMENT</div>
-      <div className="absolute bottom-1/3 left-20 text-gray-800 font-semibold text-lg">MAINTENANCE</div>
+      <div className="absolute top-20 left-68 text-gray-800 font-semibold text-lg">DEPLOYMENT</div>
+      <div className="absolute top-12 right-64 text-gray-800 font-semibold text-lg">TESTING</div>
+      <div className="absolute top-12 left-56 text-gray-800 font-semibold text-lg">MAINTENANCE</div>
+      <div className="absolute bottom-1/3 right-40 text-gray-800 font-semibold text-lg">BUILDING</div>
+      <div className="absolute bottom-20 right-28 text-gray-800 font-semibold text-lg">DEFINING</div>
+      <div className="absolute bottom-28 right-60 text-gray-800 font-semibold text-lg">DESIGNING</div>
+      <div className="absolute bottom-24 left-56 text-gray-800 font-semibold text-lg">MAINTENANCE</div>
     </div>
         </div>
     </div>
