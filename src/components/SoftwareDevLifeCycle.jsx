@@ -29,7 +29,7 @@ export default function SoftwareDevLifeCycle() {
       <div className="absolute bottom-1/3 right-40 text-gray-800 font-semibold text-lg">BUILDING</div>
       <div className="absolute bottom-20 right-28 text-gray-800 font-semibold text-lg">DEFINING</div>
       <div className="absolute bottom-28 right-60 text-gray-800 font-semibold text-lg">DESIGNING</div>
-      <div className="absolute bottom-24 left-56 text-gray-800 font-semibold text-lg">MAINTENANCE</div>
+      <div className="absolute bottom-24 left-64 text-gray-800 font-semibold text-lg">PLANNING</div>
     </div>
         </div>
     </div>
