@@ -11,6 +11,7 @@ import SoftwareDevlifeCycle from './components/SoftwareDevLifeCycle'
 import MotoSection from './components/MotoSection'
 import OurClient from './components/OurClient'
 import MainFooter from './components/MainFooter'
+import awardPic from "./assets/award-pic.png"
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
     <MotoSection/>
     <OurClient/>
     <MainFooter/>
+    <div className='fixed left-24 bottom-28'>
+    <img src={awardPic} width="25%" height="25%" />
+    </div>
     </div>
     </>
   )

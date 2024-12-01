@@ -8,7 +8,7 @@ export default function () {
   const [buttonBackgorund, setButtonBackground] = useState(texture);
   return (
     <>
-      <div className="flex text-[#dbdbdb] cursor-pointer font-bold justify-center w-[100%] pt-4 ">
+      <div className="flex text-[#dbdbdb] cursor-pointer font-bold justify-center w-[100%] pt-4 sticky top-0">
         <div>
         <p className="text-4xl leading-tight">EZLINE</p>
         <p className="text-xl leading-tight">software house</p>

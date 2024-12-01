@@ -7,7 +7,7 @@ export default function AnimationSection()
     
         // <div className="bg-gradient-to-r from-[#f9cb80] to-[#22193c] h-[95%]">
         <div className="bg-[#181828] h-[95%] ">
-            <div>
+            <div className="sticky top-0">
                 <AnimationSectionNavBar/>
             </div>
         </div>
