@@ -9,6 +9,8 @@ import OurProjectManagement from './components/OurProjectManagementSection'
 import IphoneSection from './components/IphoneSection'
 import SoftwareDevlifeCycle from './components/SoftwareDevLifeCycle'
 import MotoSection from './components/MotoSection'
+import OurClient from './components/OurClient'
+import MainFooter from './components/MainFooter'
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
     <IphoneSection/>
     <SoftwareDevlifeCycle/>
     <MotoSection/>
+    <OurClient/>
+    <MainFooter/>
     </div>
     </>
   )
