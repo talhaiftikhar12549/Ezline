@@ -4,6 +4,7 @@ import googleReview from "../assets/google-review.png"
 import caenderLogo from "../assets/calender logo.svg"
 import sudiaLogo from "../assets/ezlinefooterlogo.svg"
 import CMLogo from "../assets/ezlinefooterlogo2.svg"
+import LowerNavBar from "./LowerNavBar"
 export default function MainFooter() {
     return (
         <>
@@ -39,7 +40,7 @@ export default function MainFooter() {
 
                             <div className="w-[100%] flex border-b-[1px] py-4">
                                 <div className="w-[30%]">
-                                <img src={sudiaLogo} alt="" className="w-20 h-20"/>
+                                    <img src={sudiaLogo} alt="" className="w-20 h-20" />
                                 </div>
                                 <div className="w-[70%]">
                                     <p className="text-[#829aae] hover:text-[#02b8cd]">presendental award won by ezline Software House in IT sector</p>
@@ -49,7 +50,7 @@ export default function MainFooter() {
 
                             <div className="w-[100%] flex  py-4">
                                 <div className="w-[30%]">
-                                <img src={CMLogo} alt="" className="w-20 h-20"/>
+                                    <img src={CMLogo} alt="" className="w-20 h-20" />
                                 </div>
                                 <div className="w-[70%]">
                                     <p className="text-[#829aae] hover:text-[#02b8cd]">Ezline Exibition at LEAP 2023 Sudia Arabia</p>
@@ -74,7 +75,7 @@ export default function MainFooter() {
 
 
                 </div>
-
+                <LowerNavBar />
             </div>
         </>
     )
