@@ -42,6 +42,7 @@ function App() {
 
   const targetRef = useRef(null);
   const [divPosition, setDivPosition] = useState("sticky");
+  const [bgColor, setBgColor] = useState("#181828")
   const [hasTriggered, setHasTriggered] = useState(false);
 
   useEffect(() => {
@@ -52,6 +53,7 @@ function App() {
 
       if (rect.top <= 0) {  // Check if element has reached the top of the viewport
         setDivPosition("fixed");
+setBgColor("#010102")
         setHasTriggered(true);
       }
     };
@@ -59,7 +61,7 @@ function App() {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);  // Cleanup listener on unmount
+      window.removeEventListener('scroll', handleScroll);  
     };
   }, [hasTriggered]);
 
@@ -70,7 +72,8 @@ function App() {
           <NavBar />
         </div>
 
-        <div style={{ position: divPosition }} className='bg-[#010102] w-[100%] top-0 z-10'>
+        <div style={{ position: divPosition, backgroundColor: bgColor }} className='w-[100%] top-0 z-10'>
+
           <AnimationSectionNavBar />
         </div>
         <AnimationSection />

@@ -52,7 +52,7 @@ export default function OurClient() {
 
   return (
     <div className="flex flex-col items-center justify-center h-[50%] bg-gray-100 py-8 relative">
-      <h2 className="text-3xl font-bold text-orange-500 mb-8">OUR CLIENTS</h2>
+      <h2 className="w-[100%] pl-12 text-3xl font-bold text-orange-500 mb-8">OUR CLIENTS</h2>
       <div className="relative overflow-hidden w-full max-w-[90%]">
         {/* Carousel Container */}
         <div
