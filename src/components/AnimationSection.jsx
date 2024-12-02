@@ -1,24 +1,14 @@
-
-import AnimationSectionNavBar from "./AnimationSectionNavBar"
-import React, { useState } from "react";
-import texture from "../assets/texture.jpg";
-import searchpic from "../assets/search.svg";
-import bluesearch from "../assets/blue search.svg";
-
-export default function AnimationSection()
-{
-    const [currentImage, setCurrentImage] = useState(searchpic);  // Add state here
-    const [buttonBackgorund, setButtonBackground] = useState(texture);
+export default function AnimationSection() {
     return (
-    <>
+        <>
+            <div className="bg-[#181828] h-[95vh] flex items-center justify-center">
+                <div>
+                <h1 className="text-[#dbdbdb] text-4xl font-bold animate-bigBounce">
+                        EZILINE
+                    </h1>
 
-        
-        <div className="bg-[#181828] h-[95%] ">
-        {/* <AnimationSectionNavBar/> */}
-           
-        </div>
+                </div>
+            </div>
         </>
-        
-        
-    )
+    );
 }
