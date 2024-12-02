@@ -13,34 +13,64 @@ import awardPic from "./assets/award-pic.png";
 import AnimationSectionNavBar from './components/AnimationSectionNavBar';
 
 function App() {
+  // const targetRef = useRef(null);
+  // const [divPosition, setDivPosition] = useState("sticky")
+  // const [divHeight, setDivHeight] = useState(0)
+  // const [hasTriggered, setHasTriggered] = useState(false);  // State to track trigger status
+
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (hasTriggered) return;
+  //     setDivHeight(targetRef.current.clientHeight)
+  //     console.log(divHeight)
+
+  //     if (divHeight) {
+  //       console.log('Element touched the top of the screen!');
+  //       setDivPosition("fixed")
+  //       setHasTriggered(true);  // Set trigger flag to true
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);  // Cleanup
+  //   };
+  // }, [hasTriggered]);  // Depend on `hasTriggered`
+
+
   const targetRef = useRef(null);
-  const [divPosition, setDivPosition]=useState("sticky")
-  const [hasTriggered, setHasTriggered] = useState(false);  // State to track trigger status
+  const [divPosition, setDivPosition] = useState("sticky");
+  const [hasTriggered, setHasTriggered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (hasTriggered) return;  // Exit if already triggered
+      if (hasTriggered) return;
 
-      const rect = targetRef.current.getBoundingClientRect();
-      if (rect.top <= 0) {
-        // console.log('Element touched the top of the screen!');
-        setDivPosition("fixed")
-        setHasTriggered(true);  // Set trigger flag to true
+      const rect = targetRef.current.getBoundingClientRect(); // Get position relative to viewport
+
+      if (rect.top <= 0) {  // Check if element has reached the top of the viewport
+        setDivPosition("fixed");
+        setHasTriggered(true);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);  // Cleanup
+      window.removeEventListener('scroll', handleScroll);  // Cleanup listener on unmount
     };
-  }, [hasTriggered]);  // Depend on `hasTriggered`
+  }, [hasTriggered]);
 
   return (
     <>
       <div className='h-[100vh] w-[100%]'>
-        <NavBar />
-        <div ref={targetRef} style={{position:divPosition}} className='bg-[#010102] w-[100%] top-0 z-10'>
+        <div className='' ref={targetRef}>
+          <NavBar />
+        </div>
+
+        <div style={{ position: divPosition }} className='bg-[#010102] w-[100%] top-0 z-10'>
           <AnimationSectionNavBar />
         </div>
         <AnimationSection />
